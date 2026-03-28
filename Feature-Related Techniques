@@ -1,0 +1,151 @@
+1 Data Cleaning (Before Feature Engineering)
+
+(a) Missing values 
+Techniques:
+Mean / Median imputation
+Mode imputation                           toll simpleimuter , knnimputer
+Constant value
+KNN imputation
+Iterative imputation
+
+
+(B) Outliers
+Methods:
+Z-score method
+IQR method
+Noise removal
+
+2 Feature Transformation
+
+(A) Feature Scaling
+
+Standardization
+Normalization
+Robust Scaling        Uses median and IQR for outlier-resistant scaling.
+
+
+(B) Distribution transform       Used when features are skewed
+Techniques:
+Log transformation
+Square root transformation
+Box-Cox transformation
+Yeo-Johnson transformation
+
+3 Feature Creation (Feature Engineering)
+
+(A) Polynomial Features       Creates: x,x2,x3       Used for nonlinear modeling.  
+(B) Interaction Features      new_feature = height × weight   Captures relationships between variables.
+(C) Binning / Discretization  Convert continuous into categories.  ex income → low, medium, high
+(D) Date-Time Feature Extraction  From: 2026-03-28 to year , month , day, weekday , quarter 
+(E) Domain-Based Features  These are manually engineered features based on problem knowledge. ex BMI = weight / height²
+
+4 Categorical Encoding Techniques
+Machines cannot understand text categories, so we encode them.
+
+(A) Label Encoding        ex red , blue , green  to 0,1,2 
+(B) One-hot Encoding      Creates binary columns.
+(C) Ordinal Encoding      Used when order exists Low < Medium < High
+(D) Target Encoding       Uses target mean to encode categories.
+(E) Frequency Encoding    Encodes based on occurrence count.
+
+5 Feature Selection (Removing Bad Features)
+Goal:
+reduce overfitting
+improve speed
+improve interpretability
+
+(A)Filter Methods   Independent of model. 
+Techniques:
+Correlation threshold
+Chi-square test
+ANOVA test
+Mutual information
+
+
+(B)Wrapper    Use model performance to select features.
+Techniques:
+Recursive Feature Elimination (RFE)
+Forward Selection
+Backward Elimination
+
+
+(C) Embedded Methods  Feature selection happens during model training.
+
+Examples:
+Lasso regression
+Decision trees
+Random forest feature importance
+
+
+
+6 Feature Extraction (Dimensionality Reduction)
+This is different from feature selection:
+selection removes features
+extraction creates new compressed features
+(A) PCA   Transforms features into new orthogonal components.
+Autoencoders
+
+7. Advanced Feature Engineering (Used in Real Projects)
+
+(A)Text Features
+   Bag of Words
+   TF-IDF
+   Word embeddings
+(B) Image Features
+   Edge detection
+   CNN embeddings
+(C)Time-Series Features
+   Lag features
+   Rolling mean
+   Seasonality indicators
+
+Complete List of Feature-Related Techniques
+
+Here is the full checklist you can use when working on any dataset:
+
+Data Cleaning
+     Missing values
+     Outliers
+     Noise removal
+Transformation
+     Scaling
+     Distribution transform
+Creation
+     Polynomial
+     Interaction
+     Binning
+     Date extraction
+    Domain features
+Encoding
+    Label
+    One-hot
+    Target
+    Frequency
+Selection
+    Filter
+    Wrapper
+    Embedded
+Extraction
+    PCA
+    Autoencoders
+
+
+
+Real ML Pipeline with All Feature Steps
+
+Raw Data
+   ↓
+Cleaning
+   ↓
+Encoding
+   ↓
+Scaling
+   ↓
+Feature Creation
+   ↓
+Feature Selection
+   ↓
+Dimensionality Reduction
+   ↓
+Model Training
+
