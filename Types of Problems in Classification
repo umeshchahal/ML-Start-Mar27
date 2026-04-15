@@ -1,0 +1,57 @@
+(A) Binary Classification 
+
+Examples:
+Spam vs Not Spam
+Disease vs No Disease
+
+Best Algorithms:
+Logistic Regression (baseline)
+Random Forest ⭐
+XGBoost / LightGBM ⭐⭐⭐ (very strong)
+SVM (small-medium data)
+Neural Networks (large data)
+
+(B) Multi-class Classification
+
+Examples:
+Digit recognition (0–9)
+Product category prediction
+
+Best Algorithms:
+Logistic Regression (multinomial)
+Random Forest
+XGBoost / LightGBM ⭐⭐⭐
+Neural Networks (CNN for images)
+
+
+(C) Multi-label Classification
+
+👉 One sample → multiple labels
+
+Example:
+Movie → [Action, Comedy]
+
+Best Algorithms:
+Binary Relevance (multiple logistic models)
+Random Forest
+Neural Networks ⭐
+
+
+(D) Imbalanced Classification ⚠️ (VERY IMPORTANT in real world)
+👉 One class dominates
+
+Example:
+Fraud detection (99% normal, 1% fraud)
+
+Problems:
+Model predicts majority only
+
+Solutions + Algorithms:
+XGBoost (handles imbalance well) ⭐
+Random Forest
+
+Use:
+SMOTE
+Class weights
+Precision/Recall instead of accuracy
+
