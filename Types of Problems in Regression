@@ -1,0 +1,61 @@
+many issues exist 👇
+
+(A) Linear Relationship
+
+👉 Straight-line pattern
+
+Best Algorithms:
+Linear Regression (baseline)
+Ridge / Lasso ⭐ (regularization)
+
+
+(B) Non-linear Relationship
+
+👉 Real-world data mostly non-linear
+
+Best Algorithms:
+Decision Tree
+Random Forest ⭐
+XGBoost / LightGBM ⭐⭐⭐
+Neural Networks
+
+(C) Outliers Problem ⚠️
+
+👉 Extreme values break model
+
+Best Algorithms:
+Robust Regression
+Tree-based models (Random Forest, XGBoost) ⭐
+
+(D) High-Dimensional Data
+
+👉 Too many features
+
+Best Algorithms:
+Lasso (feature selection) ⭐
+Ridge
+ElasticNet
+
+(E) Time Series Regression
+
+👉 Data depends on time
+
+Best Algorithms:
+ARIMA
+LSTM ⭐ (deep learning)
+Prophet
+
+
+Quick Comparison (VERY IMPORTANT)
+
+| Situation     | Best Algorithm                  |
+| ------------- | ------------------------------- |
+| Small data    | Logistic / Linear               |
+| Large data    | XGBoost / LightGBM ⭐            |
+| Non-linear    | Random Forest / Boosting        |
+| Imbalanced    | XGBoost + class_weight          |
+| High features | Lasso / Ridge                   |
+| Text data     | Naive Bayes / TF-IDF + Logistic |
+| Image data    | CNN ⭐                           |
+| Time series   | ARIMA / LSTM                    |
+
